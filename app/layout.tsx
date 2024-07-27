@@ -25,9 +25,9 @@ export default function RootLayout({
         <footer className="bg-white sm:p-6 dark:bg-gray-800">
           <div className="mx-auto max-w-screen-xl px-10">
             <div className="md:flex md:justify-between">
-              <div className="mb-6 md:mb-0 flex flex-col justify-center">
+              <div className="mb-6 md:mb-0 flex flex-col justify-center items-center">
                 <Image src={Logo} className=" w-36" alt="" />
-                <span className="self-center text-lg whitespace-nowrap text-primary font-bold">
+                <span className="text-lg whitespace-nowrap text-primary font-bold">
                   Career Portal
                 </span>
               </div>
