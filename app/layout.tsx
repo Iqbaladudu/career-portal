@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavbarComponent from "@/components/navbar";
+import Image from "next/image";
+import Logo from "@/public/assets/career_expo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +25,11 @@ export default function RootLayout({
         <footer className="bg-white sm:p-6 dark:bg-gray-800">
           <div className="mx-auto max-w-screen-xl px-10">
             <div className="md:flex md:justify-between">
-              <div className="mb-6 md:mb-0 flex justify-center">
-                <a href="" className="flex items-center">
-                  <span className="self-center text-2xl whitespace-nowrap text-primary font-bold">
-                    Career Portal
-                  </span>
-                </a>
+              <div className="mb-6 md:mb-0 flex flex-col justify-center">
+                <Image src={Logo} className=" w-36" alt="" />
+                <span className="self-center text-lg whitespace-nowrap text-primary font-bold">
+                  Career Portal
+                </span>
               </div>
               <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                 <div>
